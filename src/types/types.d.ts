@@ -21,6 +21,7 @@ export interface Media {
   genres: Genres[];
   runtime: number;
   homepage: string;
+  backdrop_path: string;
 }
 
 export interface Movie extends Media {}
