@@ -4,7 +4,7 @@ import icon from '../../assets/icon.png';
 
 export const NavBar = () => {
   return (
-    <nav className=" w-screen absolute z-10 py-16 px-52 flex justify-between items-center max-lg:px-16  max-sm:px-5">
+    <nav className=" w-full absolute z-10 py-16 px-52 justify-between flex items-center max-lg:px-16  max-sm:px-5">
       <div className="flex items-center gap-3">
         <Image
           src={icon}

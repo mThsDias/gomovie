@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { CardType } from './types';
 import Image from 'next/image';
 
@@ -6,7 +7,8 @@ interface CardProps {
 }
 
 export const Card = ({ card }: CardProps) => {
-  const { title, overview, poster_path } = card;
+  const { title, overview, poster_path, id } = card;
+
   return (
     <section className="flex items-center justify-between px-52 py-56 ">
       <div className="flex flex-col w-1/2 gap-20">
@@ -22,7 +24,7 @@ export const Card = ({ card }: CardProps) => {
         </div>
         <div className="text-white font-bold text-2xl flex gap-5">
           <span className="border-none bg-lime-600 rounded-full px-10 py-2 hover:bg-lime-500 hover:text-zinc-950 cursor-pointer">
-            Assistir
+            <Link href={`/teste/${id}`}>Assistir</Link>
           </span>
           <span className="border-none bg-lime-600 rounded-full px-10 py-2 hover:bg-lime-500 hover:text-zinc-950 cursor-pointer">
             Trailer

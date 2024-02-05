@@ -6,8 +6,6 @@ import { Card } from '../Card/Card';
 export const Header = () => {
   const { data, isLoading, error } = useContext(MovieContext);
 
-  console.log({ data });
-
   const settings: SliderProps = {
     spaceBetween: 0,
     slidesPerView: 1,

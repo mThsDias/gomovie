@@ -1,5 +1,5 @@
 import { createContext } from 'react';
-import { MovieProviderProps, ContextValue } from '@/types/types';
+import { MovieProviderProps, ContextValue, Media } from '@/types/types';
 import useAxios from '@/hooks/useAxios';
 
 export const MovieContext = createContext({} as ContextValue);
